@@ -39,4 +39,5 @@ Emotion-Camera-Project/
 ## ملاحظات
 - تأكد من تنظيم البيانات في `data/train/<class>/` و `data/val/<class>/`.
 - الكود يعتمد على مكتبات شائعة: PyTorch, OpenCV, MediaPipe.
+- للتواصل mustafazamzamkazak@gmail.com
 """
