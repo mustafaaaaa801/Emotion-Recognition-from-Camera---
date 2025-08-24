@@ -9,17 +9,23 @@ pip install -r requirements.txt
 
 ## بنية المشروع (مبسطة)
 ```
-emotion_camera_project/
-├─ data/ # ضع هنا الصور المصنفة: train/ val/ test/ each-class/
-├─ src/
-│ ├─ data_pipeline.py
-│ ├─ models.py
-│ ├─ train.py
-│ ├─ infer_camera.py
-│ └─ utils.py
-├─ configs/config.yaml
-├─ requirements.txt
-└─ README.md
+Emotion-Camera-Project/
+│
+├── data/               # بيانات التدريب والتقييم
+│   ├── train/
+│   └── val/
+├── configs/
+│   └── config.yaml
+├── outputs/
+│   └── best.pth        # أفضل نموذج تم تدريبه
+├── src/
+│   ├── train.py
+│   ├── infer_camera.py
+│   ├── data_pipeline.py
+│   └── models.py
+├── collect_data.py
+└── README.md
+
 ```
 
 
