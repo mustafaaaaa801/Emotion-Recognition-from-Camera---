@@ -1,0 +1,23 @@
+train:
+  epochs: 25
+  batch_size: 16
+  lr: 1e-4
+  weight_decay: 1e-5
+  seed: 42
+
+model:
+  name: resnet18
+  pretrained: true
+  num_classes: 9  # تسع حالات عاطفية
+
+data:
+  img_size: 224
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+  augmentation:
+    horizontal_flip: true
+    rotation: 15
+
+infer:
+  face_detector: mediapipe
+  smoothing_window: 5
